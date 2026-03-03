@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:rte="clr-namespace:Syncfusion.Maui.RichTextEditor;assembly=Syncfusion.Maui.RichTextEditor"
+             xmlns:inputs="clr-namespace:Syncfusion.Maui.Inputs;assembly=Syncfusion.Maui.Inputs"
+             x:Class="RTEThemeCustomizationSample.MainPage"
+             Padding="50">
+    <ScrollView>
+        <Grid >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <rte:SfRichTextEditor
+                x:Name="RichTextEditor"
+                EnableAutoSize="True"
+                BorderThickness="2"
+                Margin="0,0,0,8">
+
+                <rte:SfRichTextEditor.ToolbarSettings>
+                    <rte:RichTextEditorToolbarSettings />
+                </rte:SfRichTextEditor.ToolbarSettings>
+
+                <rte:SfRichTextEditor.ToolbarItems>
+                    <rte:RichTextToolbarItem Type="BulletList"/>
+                    <rte:RichTextToolbarItem Type="NumberList"/>
+                    <rte:RichTextToolbarItem Type="FontFamily"/>
+                    <rte:RichTextToolbarItem Type="FontSize"/>
+                    <rte:RichTextToolbarItem Type="TextColor"/>
+                    <rte:RichTextToolbarItem Type="HighlightColor"/>
+                    <rte:RichTextToolbarItem Type="Bold"/>
+                    <rte:RichTextToolbarItem Type="Italic"/>
+                    <rte:RichTextToolbarItem Type="Underline"/>
+                    <rte:RichTextToolbarItem Type="Hyperlink"/>
+                    <rte:RichTextToolbarItem Type="Separator"/>
+                    <rte:RichTextToolbarItem Type="Image"/>
+                    <rte:RichTextToolbarItem Type="ParagraphFormat"/>
+                    <rte:RichTextToolbarItem Type="Alignment"/>
+                </rte:SfRichTextEditor.ToolbarItems>
+            </rte:SfRichTextEditor>
+
+            <HorizontalStackLayout Grid.Row="1" Spacing="5">
+
+                <Label Text="Text Color:" VerticalOptions="Center" Margin="10,0,0,0"/>
+                <inputs:SfColorPicker x:Name="TextColorPicker"
+                    ColorMode="Palette"
+                    PaletteColumnCount="5"
+                    PaletteRowCount="1"
+                    IsInline="False"
+                    ColorChanged="OnTextColorChanged"/>
+
+                <Label Text="Toolbar Background Color:" VerticalOptions="Center" Margin="10,0,0,0"/>
+                <inputs:SfColorPicker x:Name="ToolbarBackgroundPicker"
+                    ColorMode="Palette"
+                    PaletteColumnCount="5"
+                    PaletteRowCount="1"
+                    ColorChanged="OnToolbarBackgroundColorChanged"/>
+
+                <Label Text="Selection Highlight Color:" VerticalOptions="Center" Margin="10,0,0,0"/>
+                <inputs:SfColorPicker x:Name="SelectionHighlightPicker"
+                    ColorMode="Palette"
+                    PaletteColumnCount="5"
+                    PaletteRowCount="1"
+                    ColorChanged="OnSelectionHighlightColorChanged"/>
+
+                <Label x:Name="ThemeLabel" Text="Light" VerticalOptions="Center" Margin="10,0,0,0"/>
+                <Switch x:Name="ThemeSwitch" HorizontalOptions="End" Toggled="OnThemeSwitchToggled" WidthRequest="15"/>
+                
+            </HorizontalStackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
