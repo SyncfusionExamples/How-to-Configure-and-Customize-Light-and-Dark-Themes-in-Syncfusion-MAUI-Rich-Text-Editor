@@ -29,5 +29,6 @@ It also shows how to modify the toolbar appearance (text color, background color
 
 The sample demonstrates a Rich Text Editor where users can switch between themes and customize UI colors interactively.
 
-![RTE_demo.gif](https://support.syncfusion.com/kb/agent/attachment/article/22656/inline?token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU5MDMyIiwib3JnaWQiOiIzIiwiaXNzIjoic3VwcG9ydC5zeW5jZnVzaW9uLmNvbSJ9.M-zOyWfoDbSxSXvTiak4T2TfFqngadV-9cAFy4v-SAg)
+![RichTextEditor Theme demo](https://github.com/user-attachments/assets/0a5a94f6-8dd1-41f6-a200-485fa6623eac)
+
 
