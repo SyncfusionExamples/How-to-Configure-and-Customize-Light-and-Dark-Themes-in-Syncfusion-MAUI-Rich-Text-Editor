@@ -1,6 +1,6 @@
 # Theme Customization in Syncfusion Rich Text Editor (.NET MAUI)
 
-This sample demonstrates how to customize the **Light** and **Dark** themes in the Syncfusion [SfRichTextEditor](https://www.syncfusion.com/maui-controls/maui-rich-text-editor) for .NET MAUI.  
+This sample demonstrates how to customize the **Light** and **Dark** themes in the Syncfusion [.NET MAUI SfRichTextEditor](https://www.syncfusion.com/maui-controls/maui-rich-text-editor)  
 It also shows how to modify the toolbar appearance (text color, background color, and selection highlight color) using color pickers.
 
 ## What this sample includes
